@@ -3,7 +3,6 @@
 | Global APP Init
 |--------------------------------------------------------------------------
 */
-	process.env.ORA_SDTZ = 'UTC';
 	global._directory_base = __dirname;
 
 /*
@@ -37,5 +36,18 @@
 	App.get( '/', async function( req, res ) {
 		return res.json( {
 			message: "Hi Mas Erwin"
+		} );
+	} );
+
+	App.get( '/hello-world', async function( req, res ) {
+		return res.json( {
+			message: "Hello World"
+		} );
+	} );
+
+	App.post( '/hello-world', async function( req, res ) {
+		return res.json( {
+			message: "Get Post Variable",
+			data: req.body
 		} );
 	} );
