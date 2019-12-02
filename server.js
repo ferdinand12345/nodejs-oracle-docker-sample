@@ -117,42 +117,4 @@
 				}
 			}
 		}
-	} )
-
-/*
-async function run() {
-	let connection;
-
-	try {
-
-		let sql, binds, options, result;
-
-		connection = await OracleDB.getConnection( database_config );
-		sql = `SELECT * FROM TR_FINDING`;
-		binds = {};
-		options = {
-			outFormat: OracleDB.OUT_FORMAT_OBJECT
-			// extendedMetaData: true,
-			// fetchArraySize: 100
-		};
-
-		result = await connection.execute( sql, binds, options );
-
-		console.log( "Column metadata: ", result.metaData );
-		console.log( "Query results: ");
-		console.log( result.rows );
-
-	} catch ( err ) {
-		console.error(err);
-	} finally {
-		if ( connection ) {
-			try {
-				await connection.close();
-			} catch ( err ) {
-				console.error( err );
-			}
-		}
-	}
-}
-
-run();*/
+	} );
