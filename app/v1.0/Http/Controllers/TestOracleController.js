@@ -18,11 +18,11 @@
  |--------------------------------------------------------------------------
  */
  	/** 
- 	  * F.getdata
-	  * Untuk mengambil data berdasarkan query.
-	  *
-	  * URL: [GET] http://localhost:3000/api/v1.0/getdata
-	  * --------------------------------------------------------------------
+ 	 * F.getdata
+	 * Untuk mengambil data berdasarkan query.
+	 *
+	 * URL: [GET] http://localhost:3000/api/v1.0/getdata
+	 * --------------------------------------------------------------------
 	*/
 		exports.getdata = async ( req, res, next ) => {
 			let connection;
@@ -66,12 +66,12 @@
 		}
 
 	/** 
- 	  * F.getdata_by_parameter
-	  * Untuk mengambil data berdasarkan query dan parameter.
-	  *
-	  * URL: [GET] http://localhost:3000/api/v1.0/getdata/:ID
-	  * PARAMETER: ID
-	  * --------------------------------------------------------------------
+ 	 * F.getdata_by_parameter
+	 * Untuk mengambil data berdasarkan query dan parameter.
+	 *
+	 * URL: [GET] http://localhost:3000/api/v1.0/getdata/:ID
+	 * PARAMETER: ID
+	 * --------------------------------------------------------------------
 	*/
 		exports.getdata_by_parameter = async ( req, res, next ) => {
 			let connection;
@@ -115,12 +115,12 @@
 		}
 
 	/** 
- 	  * F.insertdata
-	  * Untuk insert data berdasarkan Raw Body.
-	  *
-	  * URL: [GET] http://localhost:3000/api/v1.0/insertdata
-	  * BODY: ID, NAMA, TANGGAL( YYYY-MM-DD )
-	  * --------------------------------------------------------------------
+ 	 * F.insertdata
+	 * Untuk insert data berdasarkan Raw Body.
+	 *
+	 * URL: [GET] http://localhost:3000/api/v1.0/insertdata
+	 * BODY: ID, NAMA, TANGGAL( YYYY-MM-DD )
+	 * --------------------------------------------------------------------
 	*/
 		exports.insertdata = async ( req, res, next ) => {
 			let connection;
@@ -180,13 +180,13 @@
 		}
 
 	/** 
- 	  * F.updatedata
-	  * Untuk update data berdasarkan Raw Body dan parameter.
-	  *
-	  * URL: [GET] http://localhost:3000/api/v1.0/updatedata/:ID
-	  * PARAMETER: ID
-	  * BODY: NAMA, TANGGAL( YYYY-MM-DD )
-	  * --------------------------------------------------------------------
+ 	 * F.updatedata
+	 * Untuk update data berdasarkan Raw Body dan parameter.
+	 *
+	 * URL: [GET] http://localhost:3000/api/v1.0/updatedata/:ID
+	 * PARAMETER: ID
+	 * BODY: NAMA, TANGGAL( YYYY-MM-DD )
+	 * --------------------------------------------------------------------
 	*/
 		exports.updatedata = async ( req, res, next ) => {
 			let connection;
@@ -241,12 +241,12 @@
 		}
 
 	/** 
- 	  * F.deletedata
-	  * Untuk update data berdasarkan Raw Body dan parameter.
-	  *
-	  * URL: [GET] http://localhost:3000/api/v1.0/deletedata/:ID
-	  * PARAMETER: ID
-	  * --------------------------------------------------------------------
+ 	 * F.deletedata
+	 * Untuk update data berdasarkan Raw Body dan parameter.
+	 *
+	 * URL: [GET] http://localhost:3000/api/v1.0/deletedata/:ID
+	 * PARAMETER: ID
+	 * --------------------------------------------------------------------
 	*/
 		exports.deletedata = async ( req, res, next ) => {
 			let connection;
