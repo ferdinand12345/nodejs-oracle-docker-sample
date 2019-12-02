@@ -24,9 +24,9 @@
 		| choice installed on your machine before you begin development.
 		|
 		*/
-			tapdw: {
-				user : process.env.NODE_ORACLEDB_USER || "TAP_DW",
-				password : process.env.NODE_ORACLEDB_PASSWORD || "tapdw123#",
-				connectString : process.env.NODE_ORACLEDB_CONNECTIONSTRING || "10.20.1.103:1521/tapdw"
+			connection_name_syalala: {
+				user : process.env.NODE_ORACLEDB_USER || "username",
+				password : process.env.NODE_ORACLEDB_PASSWORD || "password",
+				connectString : process.env.NODE_ORACLEDB_CONNECTIONSTRING || "hostname:port/service_name"
 			}
 	}
