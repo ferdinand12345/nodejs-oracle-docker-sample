@@ -7,6 +7,17 @@ See Getting Started with [Node-oracledb](https://oracle.github.io/node-oracledb/
 npm install
 ```
 
+## Dockerizing NodeJS
+Docker allows you to package an application with its environment and all of its dependencies into a "box", called a container. Usually, a container consists of an application running in a stripped-to-basics version of a Linux operating system. An image is the blueprint for a container, a container is a running instance of an image.
+### Build Images
+```sh
+docker build -t ferdinand12345/oracle-sample-connection .
+```
+### Build Container
+```sh
+docker run -p 3000:3000 -d ferdinand12345/oracle-sample-connection
+```
+
 ## Configuration
 Edit the database connection on config/database.js
 ```javascript
