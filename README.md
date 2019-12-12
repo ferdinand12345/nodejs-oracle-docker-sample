@@ -1,4 +1,4 @@
-# Oracle Sample Connection
+# NodeJS Oracle Sample Connection
 Oracle Sample Connection is a sample source code for setup [OracleDB](https://www.npmjs.com/package/oracledb) packages and [ExpressJS](https://expressjs.com/).
 
 ## Installation
